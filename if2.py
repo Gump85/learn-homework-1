@@ -20,11 +20,9 @@ def main():
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    # две строки
-    str_1 = 2
-    str_2 = 'learn' 
+ 
     # функция, которая принимает на вход две строки 
-    def str_input(str_1 = '', str_2 = ''):
+    def str_input(str_1, str_2):
         if type(str_1) != str or type(str_2) != str:
             return '0'
         elif str_1 == str_2:
@@ -37,6 +35,28 @@ def main():
             return '4'
 
     #  вызов функции несколько раз
+    str_1 = 2
+    str_2 = 'abc'
+    user_input = str_input(str_1, str_2)
+    print(user_input)
+
+    str_1 = 'abc'
+    str_2 = 'abc' 
+    user_input = str_input(str_1, str_2)
+    print(user_input)
+
+    str_1 = 'zxcv'
+    str_2 = 'abc' 
+    user_input = str_input(str_1, str_2)
+    print(user_input)
+
+    str_1 = 'abc'
+    str_2 = 'learn' 
+    user_input = str_input(str_1, str_2)
+    print(user_input)
+
+    str_1 = 'abc'
+    str_2 = 'abcd' 
     user_input = str_input(str_1, str_2)
     print(user_input)
     
