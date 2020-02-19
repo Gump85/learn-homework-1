@@ -20,9 +20,9 @@ def main():
     school = []
     for i in range(1, 12):
         d = {}
-        d['school_class'] = i
+        d['school_class'] = str(i)
         d['scores'] = [randint(1,5) for x in range(5)]
-        school.append(d)
+        school.append(d) 
     print('Список оценок учеников разных классов:')
     for cl in school:
         print(cl)

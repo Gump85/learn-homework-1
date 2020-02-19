@@ -16,8 +16,14 @@ def get_summ(num_one, num_two):
     """
     Замените pass на ваш код
     """
-    pass
-    
+    try:
+        num_one = int(num_one)
+        num_two = int(num_two)
+        return num_one + num_two
+        
+    except(ValueError):
+        return 'Неверный формат ввода данных'
+
 if __name__ == "__main__":
     print(get_summ(2, 2))
     print(get_summ(3, "3"))

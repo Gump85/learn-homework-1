@@ -16,10 +16,22 @@
 """
 
 def ask_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
+    talk = {
+        "Как дела?": "Хорошо!",
+        "Что делаешь?": "Программирую",
+        'Какой сегодня год?': '2020',
+        'Какая у тебя OS?': 'Mac OS',
+        'Где ты живешь?': 'В Сети' 
+    }
+    def ask_user_dict():
+        user_quetion = input('Введите вопрос: ')
+        print(f'Пользователь: {user_quetion}')
+        if user_quetion in talk.keys():
+            print(f'Компьюетер: {talk[user_quetion]}')
+
+    while True:
+        ask_user_dict()
+
     
 if __name__ == "__main__":
     ask_user()
