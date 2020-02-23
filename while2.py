@@ -31,7 +31,6 @@ def ask_user():
 
     while True:
         ask_user_dict()
-
-    
+   
 if __name__ == "__main__":
     ask_user()
