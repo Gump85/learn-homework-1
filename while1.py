@@ -19,8 +19,6 @@ def ask_user():
         else:
             print('Не верю!!!')
             continue
-
-
-    
+   
 if __name__ == "__main__":
     ask_user()

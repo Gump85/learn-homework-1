@@ -23,7 +23,7 @@ def main():
     user_age = int(input('Пожалуйтса, введите ваш возраст: '))
 
     # определение занятия пользователя
-    def user_ocupatin(age):
+    def user_ocupation(age):
         if age < 7:
           return 'Вы ходите в детский сад'
         elif 7 <= age < 18:
@@ -34,7 +34,7 @@ def main():
           return 'Вы работаете'
     
     # вызов функции и запись результата в переменную
-    current_user_ocupation = user_ocupatin(user_age)
+    current_user_ocupation = user_ocupation(user_age)
 
     # вывод содеожимого переменной на экран
     print(current_user_ocupation)

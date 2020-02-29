@@ -27,6 +27,7 @@ def main():
     for cl in school:
         print(cl)
 
+
 # определяем средний бал классов по школе
     avr_class_score_sum = 0
     avr_school_score = 0
@@ -34,6 +35,7 @@ def main():
         avr_class_score_sum += (sum(cl['scores']) / len(cl['scores']))
     avr_school_score = avr_class_score_sum / len(school)
     print(f'Средний бал по школе равен: {avr_school_score}')
+
 
 # Определяем средний бал каждого класса
     for cl in school:
